@@ -49,8 +49,8 @@ Development files for %{name}
 %{_libdir}/libXxf86vm.so
 %{_libdir}/libXxf86vm.la
 %{_libdir}/pkgconfig/xxf86vm.pc
-%{_mandir}/man3/XF86VidMode*.3x.bz2
-%{_mandir}/man3/XF86VM.3x.bz2
+%{_mandir}/man3/XF86VidMode*.*
+%{_mandir}/man3/XF86VM.*
 
 #-----------------------------------------------------------
 

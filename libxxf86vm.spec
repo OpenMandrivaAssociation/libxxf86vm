@@ -1,26 +1,24 @@
-%define name	libxxf86vm
-%define version	1.0.1
-%define release	%mkrel 3
-
 %define major		1
 %define libname		%mklibname xxf86vm %major
 %define develname	%mklibname xxf86vm -d
 %define staticname	%mklibname xxf86vm -d -s
 
-Name:		%{name}
+Name:		libxxf86vm
 Summary:	XFree86 Video Mode Extension Library
-Version:	%{version}
-Release:	%{release}
+Version:	1.0.1
+Release:	%mkrel 3
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86vm-%{version}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires:	libx11-devel >= 1.0.0
-BuildRequires:	libxext-devel >= 1.0.0
-BuildRequires:	x11-proto-devel >= 1.0.0
-BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires: x11-util-macros		>= 1.1.5
+BuildRequires: libx11-devel		>= 1.1.3
+BuildRequires: libxdmcp-devel		>= 1.0.2
+BuildRequires: libxau-devel		>= 1.0.3
+BuildRequires: x11-proto-devel		>= 7.3
+BuildRequires: libxext-devel		>= 1.0.3
 
 %description
 XFree86 Video Mode Extension Library

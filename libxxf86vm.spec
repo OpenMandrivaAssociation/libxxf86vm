@@ -1,6 +1,6 @@
 %define name		libxxf86vm
 %define version		1.0.1
-%define release		%mkrel 3
+%define release		%mkrel 4
 
 %define major		1
 %define libname		%mklibname xxf86vm %major
@@ -10,7 +10,7 @@
 Name:		libxxf86vm
 Summary:	XFree86 Video Mode Extension Library
 Version:	1.0.1
-Release:	%mkrel 3
+Release:	%mkrel 4
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org

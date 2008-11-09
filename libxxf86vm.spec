@@ -1,6 +1,6 @@
 %define name		libxxf86vm
 %define version		1.0.2
-%define release		%mkrel 2
+%define release		%mkrel 3
 
 %define major		1
 %define libname		%mklibname xxf86vm %major

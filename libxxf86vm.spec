@@ -41,10 +41,6 @@ Obsoletes: %{_lib}xxf86vm-static-devel
 %description -n %{develname}
 Development files for %{name}
 
-%files -n %{staticname}
-%defattr(-,root,root)
-%{_libdir}/libXxf86vm.a
-
 %prep
 %setup -qn libXxf86vm-%{version}
 

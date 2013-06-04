@@ -1,10 +1,10 @@
-%define major		1
-%define libname		%mklibname xxf86vm %{major}
-%define develname	%mklibname xxf86vm -d
+%define major 1
+%define libname %mklibname xxf86vm %{major}
+%define develname %mklibname xxf86vm -d
 
 Name:		libxxf86vm
 Summary:	XFree86 Video Mode Extension Library
-Version:	1.1.2
+Version:	1.1.3
 Release:	1
 Group:		Development/X11
 License:	MIT
@@ -17,7 +17,7 @@ BuildRequires:	x11-proto-devel >= 7.5
 BuildRequires:	x11-util-macros >= 1.0.1
 
 %description
-XFree86 Video Mode Extension Library
+XFree86 Video Mode Extension Library.
 
 %package -n %{libname}
 Summary:	Shared libraries for %{name}
@@ -26,7 +26,7 @@ Conflicts:	libxorg-x11 < 7.0
 Provides:	%{name} = %{version}
 
 %description -n %{libname}
-XFree86 Video Mode Extension Library
+XFree86 Video Mode Extension Library.
 
 %package -n %{develname}
 Summary:	Development files for %{name}
@@ -39,7 +39,7 @@ Obsoletes:	%{_lib}xxf86vm1-devel < 1.1.2
 Obsoletes:	%{_lib}xxf86vm-static-devel < 1.1.2
 
 %description -n %{develname}
-Development files for %{name}
+Development files for %{name}.
 
 %prep
 %setup -qn libXxf86vm-%{version}
@@ -53,7 +53,6 @@ Development files for %{name}
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %files -n %{libname}

@@ -12,8 +12,8 @@ Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86vm-%{version}.tar.bz2
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
-BuildRequires:	x11-proto-devel >= 7.5
-BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires:	pkgconfig(xorg-macros) >= 1.0.1
+BuildRequires:	pkgconfig(xproto)
 
 %description
 XFree86 Video Mode Extension Library.
@@ -30,8 +30,6 @@ Summary:	Development files for %{name}
 Group:		Development/X11
 Requires:	%{libname} = %{version}
 Provides:	%{name}-devel = %{version}-%{release}
-Obsoletes:	%{_lib}xxf86vm1-devel < 1.1.2
-Obsoletes:	%{_lib}xxf86vm-static-devel < 1.1.2
 
 %description -n %{devname}
 Development files for %{name}.

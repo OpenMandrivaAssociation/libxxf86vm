@@ -4,8 +4,8 @@
 
 Summary:	XFree86 Video Mode Extension Library
 Name:		libxxf86vm
-Version:	1.1.3
-Release:	9
+Version:	1.1.4
+Release:	1
 License:	MIT
 Group:		Development/X11
 Url:		http://xorg.freedesktop.org
@@ -38,7 +38,7 @@ Development files for %{name}.
 %setup -qn libXxf86vm-%{version}
 
 %build
-%configure2_5x \
+%configure \
 	--disable-static \
 	--x-includes=%{_includedir} \
 	--x-libraries=%{_libdir}

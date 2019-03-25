@@ -2,10 +2,12 @@
 %define libname %mklibname xxf86vm %{major}
 %define devname %mklibname xxf86vm -d
 
+%global optflags %{optflags} -O3
+
 Summary:	XFree86 Video Mode Extension Library
 Name:		libxxf86vm
 Version:	1.1.4
-Release:	6
+Release:	7
 License:	MIT
 Group:		Development/X11
 Url:		http://xorg.freedesktop.org
@@ -35,7 +37,7 @@ Provides:	%{name}-devel = %{version}-%{release}
 Development files for %{name}.
 
 %prep
-%setup -qn libXxf86vm-%{version}
+%autosetup -n libXxf86vm-%{version} -p1
 
 %build
 %configure \
@@ -43,10 +45,10 @@ Development files for %{name}.
 	--x-includes=%{_includedir} \
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %{_libdir}/libXxf86vm.so.%{major}*
@@ -57,4 +59,3 @@ Development files for %{name}.
 %{_includedir}/X11/extensions/*.h
 %{_mandir}/man3/XF86VidMode*.*
 %{_mandir}/man3/XF86VM.*
-

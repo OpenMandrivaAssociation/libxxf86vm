@@ -83,7 +83,10 @@ cd ..
 %endif
 mkdir build
 cd build
-%configure
+%configure \
+%if %{cross_compiling}
+	--disable-malloc0returnsnull
+%endif
 
 %build
 %if %{with compat32}

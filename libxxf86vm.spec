@@ -21,7 +21,7 @@ Version:	1.1.5
 Release:	2
 License:	MIT
 Group:		Development/X11
-Url:		http://xorg.freedesktop.org
+Url:		https://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86vm-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)

@@ -17,12 +17,12 @@
 
 Summary:	XFree86 Video Mode Extension Library
 Name:		libxxf86vm
-Version:	1.1.5
-Release:	2
+Version:	1.1.6
+Release:	1
 License:	MIT
 Group:		Development/X11
 Url:		https://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86vm-%{version}.tar.xz
+Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXxf86vm-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xorg-macros) >= 1.0.1
